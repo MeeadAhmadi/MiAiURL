@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MiAiURL</title>
+  <link rel="icon" type="image/png" href="./logo.png">
+  <meta
+    name="description"
+    content="Shorten long URLs with MiAiURL, share your short links, and track how many clicks each link receives."
+  >
+</head>
+<body>
+  <header>
+    <a href="#hero-title" aria-label="MiAiURL home">
+  <img src="./logo.png" alt="" width="32" height="32">
+  <span>MiAiURL</span>
+</a>
+    <nav aria-label="Main navigation">
+      <a href="#hero-title" aria-current="page">Home</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="hero-title">
+      <h1 id="hero-title">Shorten. Share. <span>Track.</span></h1>
+      <p>The modern URL shortener for a smarter web experience.</p>
+
+      <form id="shorten-form">
+        <label for="target-url">Long URL</label>
+        <input
+          id="target-url"
+          name="target_url"
+          type="url"
+          placeholder="Paste your long URL here..."
+          required
+        >
+        <button type="submit">Shorten →</button>
+      </form>
+      <p id="shorten-result" aria-live="polite"></p>
+      <img
+        class="hero-image"
+        src="./hero-links.png"
+        alt=""
+        width="1448"
+        height="1086"
+        style="width: 100%; max-width: 480px; height: auto;">
+
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">Why MiAiURL?</h2>
+      <p>A simple tool to shorten and manage your links.</p>
+      <article>
+        <h3>Lightning Fast</h3>
+        <p>Get short links instantly.</p>
+      </article>
+      <article>
+        <h3>Click Tracking</h3>
+        <p>Count visits to each short link.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

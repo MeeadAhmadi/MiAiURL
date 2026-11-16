@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="/static/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Link not found | MiAiURL</title>
+  <link rel="icon" type="image/png" href="./logo.png">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #080e1e;
+      color: #f4f6ff;
+      font-family: system-ui, sans-serif;
+      text-align: center;
+    }
+
+    main {
+      width: min(100%, 440px);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      margin: 20px 0 8px;
+      font-size: clamp(1.75rem, 5vw, 2.25rem);
+    }
+
+    p {
+      margin: 0 0 24px;
+      color: #c4cbe0;
+      line-height: 1.5;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 8px;
+      background: #4845d9;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background: #3835bd;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #67d8ff;
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="./broken-link.png" alt="404" width="1448" height="1086">
+    <h1>Link not found</h1>
+    <p>Check the short link for a typo, or head back to the home page.</p>
+    <a href="./index.html">Go back home</a>
+  </main>
+</body>
+</html>
