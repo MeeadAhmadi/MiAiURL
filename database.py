@@ -31,3 +31,15 @@ def create_link(target_url: str) -> str:
                 )
                 if result.rowcount == 1:
                     return code
+
+                    
+def resolve_link(code: str) -> str | None:
+    with closing(sqlite3.connect(DB_PATH)) as connection:
+        with connection:
+            row = connection.execute(
+                "UPDATE links SET clicks = clicks + 1 "
+                "WHERE code = ? RETURNING target_url",
+                (code,),
+            ).fetchone()
+    return row[0] if row is not None else None
+
