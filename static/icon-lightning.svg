@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="lightning" x1="9" y1="3" x2="23" y2="29"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8790FF"/>
+      <stop offset="1" stop-color="#5145FF"/>
+    </linearGradient>
+  </defs>
+  <path
+    d="M18 3 6 18h9l-1 11 12-16h-9l1-10Z"
+    fill="url(#lightning)"
+    stroke="#939AFF"
+    stroke-linejoin="round"
+  />
+</svg>

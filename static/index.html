@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MiAiURL</title>
+  <link rel="stylesheet" href="/static/styles.css">
   <link rel="icon" type="image/png" href="/static/logo.png">
   <meta
     name="description"
@@ -33,7 +34,8 @@
         <input
           id="target-url"
           name="target_url"
-          type="url"
+          type="text"
+          inputmode="url"
           placeholder="Paste your long URL here..."
           required
         >
@@ -53,13 +55,41 @@
     <section id="about" aria-labelledby="about-title">
       <h2 id="about-title">Why MiAiURL?</h2>
       <p>A simple tool to shorten and manage your links.</p>
+
       <article>
+        <img
+          class="feature-icon"
+          src="/static/icon-lightning.svg"
+          alt=""
+          width="29"
+          height="29"
+        >
         <h3>Lightning Fast</h3>
         <p>Get short links instantly.</p>
       </article>
+
       <article>
+        <img
+          class="feature-icon"
+          src="/static/icon-chart.svg"
+          alt=""
+          width="29"
+          height="29"
+        >
         <h3>Click Tracking</h3>
         <p>Count visits to each short link.</p>
+      </article>
+
+      <article>
+        <img
+          class="feature-icon"
+          src="/static/icon-link.svg"
+          alt=""
+          width="29"
+          height="29"
+        >
+        <h3>Easy Sharing</h3>
+        <p>Copy your short link with one click and share it.</p>
       </article>
     </section>
   </main>
